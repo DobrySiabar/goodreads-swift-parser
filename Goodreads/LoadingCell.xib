@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoadingCell" id="HZQ-0r-V2L">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HZQ-0r-V2L" id="zwI-4L-GjS">
+                <frame key="frameInset" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-Qs-5wk">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y5-pI-mmH">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pkv-fR-ei7"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9y5-pI-mmH" firstAttribute="top" secondItem="6WP-Qs-5wk" secondAttribute="top" constant="20" id="FIg-hE-28f"/>
+                            <constraint firstAttribute="bottom" secondItem="9y5-pI-mmH" secondAttribute="bottom" constant="22" id="KfT-de-GPt"/>
+                            <constraint firstItem="pkv-fR-ei7" firstAttribute="top" secondItem="6WP-Qs-5wk" secondAttribute="top" constant="20" id="Sfs-83-vwu"/>
+                            <constraint firstItem="9y5-pI-mmH" firstAttribute="leading" secondItem="6WP-Qs-5wk" secondAttribute="leading" constant="20" id="fwj-Z4-P4d"/>
+                            <constraint firstItem="pkv-fR-ei7" firstAttribute="leading" secondItem="9y5-pI-mmH" secondAttribute="trailing" constant="8" id="mgW-SZ-c5J"/>
+                            <constraint firstAttribute="trailing" secondItem="pkv-fR-ei7" secondAttribute="trailing" constant="20" id="p9g-WV-dan"/>
+                            <constraint firstAttribute="bottom" secondItem="pkv-fR-ei7" secondAttribute="bottom" constant="20" id="prD-XU-aBu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6WP-Qs-5wk" firstAttribute="centerX" secondItem="zwI-4L-GjS" secondAttribute="centerX" id="4EE-IN-jKo"/>
+                    <constraint firstItem="6WP-Qs-5wk" firstAttribute="centerY" secondItem="zwI-4L-GjS" secondAttribute="centerY" id="nT7-b5-umL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="39" y="3"/>
+        </tableViewCell>
+    </objects>
+</document>
